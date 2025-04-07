@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Свинцовые блоки - НКС-оборудование</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar wrapper">
+                <div class="logo">НКС-оборудование</div>
+                <button class="hamburger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                    <li><a href="index.html#about">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-main">
+        <div class="container">
+            <a href="catalog.html" class="back-button">← Вернуться в каталог</a>
+            
+            <div class="product-content">
+                <div class="product-image">
+                    <img src="img/products/product4.png" alt="Свинцовые блоки">
+                </div>
+                
+                <div class="product-info">
+                    <h1>Свинцовые блоки</h1>
+                    
+                    <div class="product-details">
+                        <div class="product-section">
+                            <h2>Назначение</h2>
+                            <p>Блоки свинцовые «БС» относятся к изделиям общепромышленного назначения и предназначены для защиты персонала от ионизирующего излучения (гамма-излучения) при работе с источниками, блоками детектирования радиометрической аппаратуры.</p>
+                        </div>
+                        
+                        <div class="product-section">
+                            <h2>Характеристики</h2>
+                            <ul>
+                                <li>Материал: свинец марки С-1, С-2</li>
+                                <li>Толщина блоков: 50 мм</li>
+                                <li>Популярный комплект: «БС-50-01» («колодец») или «домик свинцовый»</li>
+                            </ul>
+                        </div>
+
+                        <div class="product-section">
+                            <h2>Комплектация БС-50-01</h2>
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Наименование блоков</th>
+                                            <th>Размер, мм</th>
+                                            <th>Вес</th>
+                                            <th>Количество, шт.</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>БС-01 нижний прямой</td>
+                                            <td>125×125×50</td>
+                                            <td>6,1 кг</td>
+                                            <td>14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>БС-02 средний прямой</td>
+                                            <td>125×125×50</td>
+                                            <td>5,4 кг</td>
+                                            <td>42</td>
+                                        </tr>
+                                        <tr>
+                                            <td>БС-03 верхний прямой</td>
+                                            <td>125×100×50</td>
+                                            <td>4,7 кг</td>
+                                            <td>14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>БС-04 нижний угловой</td>
+                                            <td>125×125×100×50</td>
+                                            <td>9,1 кг</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>БС-05 средний угловой</td>
+                                            <td>125×125×100×50</td>
+                                            <td>8,1 кг</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>БС-06 верхний угловой</td>
+                                            <td>125×100×100×50</td>
+                                            <td>7,1 кг</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="order-button">Заказать</a>
+                        
+                        <p class="order-note">* Все детали заказа обсуждаются лично с компанией</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer__logo">НКС-оборудование</div>
+                <div class="footer__contacts">
+                    <a href="mailto:NSK_zavod@mail.ru">NSK_zavod@mail.ru</a>
+                    <a href="tel:89060988360">8-906-098-83-60 — Генеральный директор</a>
+                    <a href="tel:89645783630">8-964-578-36-30 — Главный специалист</a>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>ООО «Новая Строительная Компания» © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html> 
